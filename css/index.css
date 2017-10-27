@@ -1,0 +1,857 @@
+@font-face {
+  font-family: 'Produkt';
+  src: url('assets/Produkt-Regular.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Produkt';
+  src: url('assets/Produkt-Bold.otf') format('otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Produkt';
+  src: url('assets/Produkt-LightItalic.otf') format('otf');
+  font-weight: 300;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+}
+
+/*the grid code - use it as a reference*/
+div.g-wrap {
+  /*outline: 5px solid #333;*/
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.col-grid:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+/*home page*/
+
+.header {
+  /*outline: 1px solid #333*/;
+  margin:auto;
+  width: 100vw;
+  height:150px;
+  background: #fafafa;
+}
+
+.h-wrap{
+  /*outline: 1px solid #333*/;
+  max-width: 960px;
+  padding-top: 20px;
+  margin-left:auto;
+  margin-right:auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  /*outline: 1px solid #333*/;
+  width: 111px;
+  height: 111px;
+/*  background-image: url("../Logo.png");
+  background-size: cover;*/
+}
+
+.logo img {
+  width: 111px;
+  height: 111px;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+h1 {
+  font-family: 'Produkt';
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+h3{
+  font-family: "Produkt";
+}
+
+.hero-image h2 {
+  font-family: 'Produkt';
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+  margin-left:30px;
+  margin-top: 20px;
+}
+
+.hero-image p{
+  font-family: 'Produkt';
+  font-weight: 300;
+  font-size: 1.5em;
+  line-height: 42px;
+  margin-left:30px;
+}
+
+
+.hero-image {
+  /*outline: 1px solid #333*/;
+  margin:auto;
+  width: 100vw;
+  height:571px;
+  background-image: url("../imgs/BG - Birthday Cake Cinnamon Roll.jpg");
+  background-size: cover;
+}
+
+.tr-bg {
+  position: absolute;
+  margin-left: 185px;
+  margin-top: 234px;
+  width: 408px;
+  height: 267px;
+  background: rgba(255,255,255,0.85);
+}
+
+.sm-hero-image-container {
+  display: flex;
+  justify-content: center;
+  /*outline: 1px solid #333*/;
+  margin:auto;
+  width: 100vw;
+  height:263px;
+  /*background: #f1f1f1;*/
+}
+
+.sm-hero-image{
+  /*outline: 1px solid #333*/;
+  margin:auto;
+  width: 50vw;
+  height:263px;
+  
+}
+
+.sm-hero-image h3{
+  font-family: 'Produkt';
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1em;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+  margin-left:30px;
+  margin-top: 20px;
+}
+
+.sm-hero-image p{
+  font-family: 'Produkt';
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+  margin-left:30px;
+}
+
+.-discount-img {
+  background-image: url("../imgs/BG - Discount.jpg");
+  background-size: cover;
+}
+
+.-activities-img {
+  background-image: url("../imgs/BG - Activities.jpg");
+  background-size: cover;
+}
+
+
+.sm-tr-bg{
+  position: absolute;
+  width: 302px;
+  height: 126px;
+  background: rgba(255,255,255,0.85);
+}
+
+.discount{
+  margin-left: 193px;
+  margin-top: 20px;
+}
+
+.activities{
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+
+.footer {
+  /*outline: 1px solid #333;*/
+  margin:auto;
+  width: 100vw;
+  height:166px;
+  background: #fafafa;
+}
+
+.footer h4 {
+  font-family: 'Produkt';
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 0.5em;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+    margin-top: 30px;
+}
+
+.footer p {
+  font-family: 'Produkt';
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 0.2em;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+}
+
+.f-wrap{
+  /*outline: 1px solid #333*/;
+  max-width: 960px;
+  margin-top: 20px;
+  margin-left:auto;
+  margin-right:auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact {
+  /*outline: 1px solid #333*/;
+  height:auto;
+  width: auto;
+}
+
+
+/*Browsing Product Page*/
+.shopping-cart {
+  /*outline: 1px solid #333*/
+  width: 49px;
+  height: 42px;
+}
+
+button {
+  border:none;
+  /*outline: 1px solid #333;*/
+  width:143px;
+  height:47px;
+  border-radius: 0;
+  background:#fdd7a7;
+  font-family: "Produkt";
+
+}
+
+button.checkout{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+button.checkout p{
+  align-self: center;
+}
+
+#shopping-cart-number{
+  /*align-self: center;*/
+  /*position: absolute;*/
+  /*margin-left: 40px;*/
+  display: flex;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: #ffa32e;
+  border-radius: 100px;
+}
+
+#shopping-cart-number p{
+  align-self: center;
+}
+
+#main-title h1,h5{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.sn- {
+  /*flex helps th*/
+  display: flex;
+  /*outline: 1px solid #333*/;
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+
+.sn- .sn-grid .product-card {
+  /*outline: 1px solid #333*/;
+  width: calc(960px / 71 * 35);
+  float: left;
+  background: transparent;
+  margin-right:calc(960px / 71);
+  height: 251px;
+  margin-bottom:40px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.pd-view {
+  /*outline: 1px solid #333*/;
+  width: 251px;
+  height: 251px;
+}
+
+/*all images here*/
+
+.birthday-cake{
+  background-image: url("../imgs/12 - Birthday Cake.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+
+
+.original{
+  background-image: url("../imgs/6 - Original.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.original-vegan{
+  background-image: url("../imgs/5 - Original (Vegan).jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.original-gluten-free{
+  background-image: url("../imgs/4 - Original (Gluten Free).jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+
+
+.maple-apple-pecan{
+  background-image: url("../imgs/1 - Maple Apple Pecan.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.strawberry-rhubarb{
+  background-image: url("../imgs/11 - Strawberry Rhubarb.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.pumpkin-spice{
+  background-image: url("../imgs/7 - Pumpkin Spice.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.caramel-pecan{
+  background-image: url("../imgs/8 - Caramel Pecan.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.carrot-cake{
+  background-image: url("../imgs/9 - Carrot Cake.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.cranberry{
+  background-image: url("../imgs/14 - cranberry.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.lemon-lavender{
+  background-image: url("../imgs/13 - Lemon Lavendar.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.walnut{
+  background-image: url("../imgs/3 - Walnut.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.blackberry{
+  background-image: url("../imgs/15 - Blackberry.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+
+
+.old-fashioned-buttermilk{
+  background-image: url("../imgs/10 - Old Fashioned Buttermilk.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.bacon{
+  background-image: url("../imgs/2 - Bacon.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+
+
+/*images end*/
+
+.pd-detail {
+  /*outline: 1px solid #333*/;
+  width:223px;
+  height:251px;
+  display: block;
+}
+
+
+
+.pd-title {
+  /*outline: 1px solid #333*/;
+  width: 100%;
+  height: 47px;
+  display: flex;
+  align-items: center;
+}
+
+.pd-title h6 {
+  margin-left: 15px;
+  font-family: "Produkt";
+  font-weight: bold;
+}
+
+.pd-quotemark {
+  /*outline: 1px solid #333*/;
+  width: 100%;
+  height: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.pd-quotemark p {
+  margin:auto;
+  font-family: "Produkt";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.pd-quote {
+  /*outline: 1px solid #333*/;
+  width: calc(100%-15px);
+  height: 122px;
+  margin-left: 15px;
+}
+
+.pd-quote q {
+  font-family: "Produkt";
+  line-height: 1.5em;
+}
+
+.pd-button {
+  /*outline: 1px solid #333*/;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+
+.pd-button button {
+  padding: 0;
+  margin-left:138px;
+  width:84px;
+  height:24px;
+  font-family: "Produkt";
+  font-weight: 300;
+  outline: none;
+  background:transparent;
+}
+
+button,a:hover {
+  cursor: pointer;
+}
+
+.sn- .sn-grid .product-card:nth-child(2n) {
+  margin-right: 0;
+  float: right;
+}
+
+/*the last two elements don't have the bottom padding*/
+.sn- .sn-grid .product-card:nth-last-of-type(-n+2) {
+  margin-bottom: 0;
+}
+
+/*Product Detail Page*/
+
+body.-product-detail:after{
+  position:fixed;
+  width: 100vw
+  height:100vh;
+  content:"";
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:rgba(0,0,0,0.75);
+  z-index:1;
+}
+
+.pd-wrapper {
+  position:fixed;
+  display: flex;
+  flex-flow: column nowrap;
+  /*justify-content: center;*/
+  width:calc(960px / 71 * 67);
+  top:40px;
+  margin-left: 17.5vw;
+  /*outline: 1px solid #fff;*/
+  z-index: 2;
+}
+
+.close {
+  display: flex;
+  /*outline: 1px solid #fff;*/
+  width:40px;
+  height:40px;
+  margin:0 auto 50px auto;
+}
+
+.pd-wrapper .product-detail-card {
+  /*outline: 1px solid #fff;*/
+  display: flex;
+  align-items: center;
+  width: inherit;
+  height:500px;
+  margin: auto;
+  background: #fff;
+}
+
+.pop-up-menu{
+  position: absolute;
+  top: 90px;
+  margin-left: 200px;
+  outline: 1px solid #333;
+  height: 500px;
+  width: 230px;
+  background: #fff;
+  z-index: 1;
+}
+
+
+
+#pd-d-new-menu h4{
+  font-family: "Produkt";
+  font-weight: "bold";
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#pd-d-new-menu p{
+  color:#adadad;
+  cursor: pointer;
+  font-family: "Produkt";
+  font-size: 0.75em;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.pd-d-img {
+  /*outline: 1px solid #fff;*/
+  width: 430px;
+  height: 100%;
+}
+
+.amp {
+  background-image: url("../imgs/PI - 2 - Birthday Cake.jpg");
+  background-size: cover;
+}
+
+.pd-d-info-container {
+  /*position: absolute;*/
+  /*outline: 1px solid #333;*/;
+  height: 462px;
+  width: 438px;
+  margin-left:20px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.pd-d-title {
+  /*outline: 1px solid #333;*/
+  width: 100%;
+  height: 200px;
+}
+
+.pd-d-title h1{
+  font-size: 2.5em;
+}
+
+.pd-d-title h3{
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+
+#label{
+  margin-top: 32px;
+  width: 90px;
+  height: 21px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  /*align-content: center;*/
+  outline: 1px solid #333;
+}
+
+#label h3{
+  margin-top:0px;
+  align-self: center;
+}
+
+#flavor-one, #flavor-two{
+  font-family: "Produkt";
+  font-weight: "bold";
+}
+
+.pd-d-title p{
+  margin-top: 0.5em;
+  font-family: "Produkt";
+  font-size: 0.75em;  
+  line-height: 1.5em;
+}
+
+.pd-d-batch {
+  /*outline: 1px solid #333;*/
+  width: 100%;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pd-d-info-container h3{
+  margin-top: 32px;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.pd-d-batch button {
+  width: 115px;
+  background: transparent;
+  outline: 1px solid #ccc; 
+}
+
+.pd-d-qty{
+  /*outline: 1px solid #333;*/;
+  width: 100%;
+  height: 150px;
+  display: block;
+  /*align-items: center;*/
+}
+
+select {
+  font-family: "Produkt";
+  border: 1px solid #111;
+  background: transparent;
+  width: 115px;
+  padding: 5px 35px 5px 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  height: 34px;
+  appearance: none;
+}
+
+.pd-d-qty-view{
+  width: 100%;
+  height:60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pd-d-qty h3{
+  margin-top: 12px;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.count-box {
+  /*outline: 1px solid #333;*/
+  width: 115px;
+  height: 45px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top:20px;
+}
+
+
+.pd-d-qty span {
+  margin-left: 357px;
+  position: absolute;
+  font-family: "Produkt";
+  font-weight: 300;
+  font-size: 2em;
+}
+
+span#dollar-sign{
+  margin-left: 357px;
+  position: absolute;
+}
+
+span#pd-d-price{
+  margin-left: 380px;
+  position: absolute;
+}
+
+.pd-d-button{
+  /*outline: 1px solid #fff;*/;
+  width: 100%;
+  height: 45px;
+}
+
+.pd-d-button button {
+  width: 100%;
+  height: 100%
+}
+
+
+
+/*** Checkout Process ***/
+
+.sc-heading {
+  /*outline: 1px solid #333;*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+}
+
+.sc-heading button {
+  right:0px;
+}
+
+.sc-card {
+  /*outline: 1px solid #333;*/
+  width: 100%;
+  height: calc(960px / 71 * 11);
+  margin-bottom:10px;
+  display: flex;
+  flex-direction: row;
+  background:#fafafa;
+/*  justify-content: space-between;*/
+}
+
+.sm-img {
+  height: calc(960px / 71 * 11);
+  width: calc(960px / 71 * 11);
+  /*background-color: #d8d8d8;*/
+}
+
+
+.sc-card-content {
+  /*background-color: #f1f1f1;*/
+  /*outline: 1px solid #333;*/
+  width: calc(960px / 71 * 60);
+  height: 150px;
+  display: block;
+  display: flex;
+}
+
+.sc-card-content h3{
+  /*outline: 1px solid #333;*/
+  font-family: "Produkt";
+  font-weight: bold;
+  font-size: 0.4em;
+}
+
+.sc-card-content p{
+  /*position: absolute;*/
+  /*outline: 1px solid #333;*/
+  font-family: "Produkt";
+  font-size: 0.8em;
+  margin-top: 15px;
+}
+
+.flavor{
+  font-size: 0.8em;
+  /*outline: 1px solid #333;*/
+  width: calc(960px/71*(6*2));
+  margin-top: 25px;
+  margin-left: calc(960px/71);
+  margin-right: calc(960px/71);
+}
+.flavor p{
+  margin-top:10px;
+}
+
+.size{
+  /*outline: 1px solid #333;*/
+  width: calc(960px/71*(6*2));
+  margin-top: 25px;
+  margin-right: calc(960px/71);
+}
+
+.quantity{
+  /*outline: 1px solid #333;*/
+   width: calc(960px/71*(6*2));
+  margin-top: 25px;
+  margin-right: calc(960px/71);
+}
+
+.price{
+  /*outline: 1px solid #333;*/
+  width: calc(960px/71*(6*2));
+  margin-top: 25px;
+  margin-right: calc(960px/71);
+}
+
+.sc-card-content button {
+  font-family: "Produkt";
+  font-size:0.25em;
+  font-weight: bold;
+  align-self: center;
+  margin-right: calc(960px/71);
+  height: 25px;
+  outline: 1px solid #d8d8d8;
+  background-color: transparent;
+}
+
+/*this is for the DOM manipulation*/
+.highlight{
+  outline: 1px solid #e47814;
+  background-color: #fee7f4;
+}
